@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
+</head>
+<body id="top">
+    <header id="top-head">
+        <div class="inner">
+            <div id="mobile-head">
+                <h1><a href="/">MCL盛岡情報ビジネス専門学校</a></h1>
+                <div id="nav-toggle">
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <nav id="global-nav">
+                <ul>
+                    <li><a href="#">体験授業</a></li>
+                    <li><a href="#">三大特典</a></li>
+                    <li><a href="#">一日の流れ</a></li>
+                    <li><a href="#">Q&A</a></li>
+                    <li><a href="#">参加申し込み</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="sride"><img src="">
+        <h2>OPENCAMPUS</h2>
+        <p>次回開催7月13日</p>
+        <p><a href="index.html">お申込みはこちらから！</a></p>
+    </div>
+    <section id="topnews">
+        <p>興味のある学科を選んで授業を体験しよう！</p>
+        <h3>体験授業</h3>
+        <article>
+            <div><img src=""></div>
+            <p>システム系学科</p>
+            <p>説明テキストは下記 URL から<a href="https://morijyobi.ac.jp/oc/">https://morijyobi.ac.jp/oc/</a></p>
+        </article>
+        <article>
+            <div><img src=""></div>
+            <p>ビジネス系学科</p>
+            <p>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
+        </article>
+        <article>
+            <div><img src=""></div>
+            <p>デザイン系学科</p>
+            <p>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
+        </article>
+    </section>
+    <section id="subnews">
+        <p>参加者にもれなくプレゼント</p>
+        <h3>参加者三大特典</h3>
+        <article>
+            <div><img src=""></div>
+            <p>特典１</p>
+            <p>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
+        </article>
+        <article>
+            <div><img src=""></div>
+            <p>特典2</p>
+            <p>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
+        </article>
+        <article>
+            <div><img src=""></div>
+            <p>特典3</p>
+            <p>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
+        </article>
+    </section>
+    <section>
+        <p>オープンキャンパス</p>
+        <h3>一日の流れ</h3>
+        <article>
+            <p>受付開始</p>
+            <p>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
+        </article>
+    </section>
+    <div>
+        <h3>参加する前の疑問質問にお答えします！<br>Q & A</h3>
+        
+    </div>
+    <section>
+        <p>参加費無料！何度でも OK ！</p>
+        <h3>オープンキャンパス申し込み</h3>
+    </section>
+    <form method="POST" action="sample.cgi">
+            <p>お名前：<input type="text" name="NAME"></p>
+            <p>メールアドレス：<input type="text" name="email"></p>
+            <p>電話番号:<input type="tel" name="tel"></p>
+            <p><input type="submit" value="送信する"></p>
+    </form>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+(function($) {
+    $(function() {
+        var $header = $('#top-head');
+        // Nav Fixed
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 350) {
+                $header.addClass('fixed');
+            } else {
+                $header.removeClass('fixed');
+            }
+        });
+        // Nav Toggle Button
+        $('#nav-toggle').click(function(){
+            $header.toggleClass('open');
+        });
+    });
+})(jQuery);
+</script>
+<footer>
+    <ul>
+        <li>盛岡情報ビジネス専門学校</li>
+        <li>〒020-0021 岩手県盛岡市中央通 3-2-17</li>
+        <li>☎ 0120-490114</li>
+    </ul>
+</footer>
